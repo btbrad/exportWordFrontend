@@ -9,6 +9,11 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "docxtemplater": "^3.18.0",
+    "docxtemplater-image-module-free": "^1.1.1",
+    "echarts": "^4.8.0",
+    "file-saver": "^2.0.2",
+    "pizzip": "^3.0.6",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
     "vuex": "^3.4.0"
