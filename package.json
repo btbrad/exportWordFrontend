@@ -12,6 +12,7 @@
     "docxtemplater": "^3.18.0",
     "docxtemplater-image-module-free": "^1.1.1",
     "echarts": "^4.8.0",
+    "element-ui": "^2.4.5",
     "file-saver": "^2.0.2",
     "pizzip": "^3.0.6",
     "vue": "^2.6.11",
@@ -31,8 +32,10 @@
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^6.2.2",
     "lint-staged": "^9.5.0",
+    "node-sass": "^4.9.2",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
+    "vue-cli-plugin-element": "^1.0.1",
     "vue-template-compiler": "^2.6.11"
   },
   "gitHooks": {

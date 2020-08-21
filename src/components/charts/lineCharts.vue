@@ -1,5 +1,5 @@
 <template>
-  <div class="line-charts" style="width: 500px;height: 500px;"></div>
+  <div class="line-charts" style="width: 100%;height: 500px;"></div>
 </template>
 
 <script>
