@@ -1,5 +1,5 @@
 <template>
-  <div class="line-charts" style="width: 100%;height: 500px;"></div>
+  <div class="line-charts" style="width: 1000px;height: 500px;"></div>
 </template>
 
 <script>
@@ -19,11 +19,15 @@ export default {
   },
   data () {
     return {
-      chart: null
+      chart: null,
+      image: null
     }
   },
   mounted () {
     this.init()
+    this.$nextTick(() => {
+      this.getImage()
+    })
   },
   methods: {
     init () {
@@ -32,6 +36,7 @@ export default {
     },
     setOptions () {
       this.chart.setOption({
+        animation: false,
         xAxis: {
           type: 'category',
           data: this.xData
@@ -44,6 +49,14 @@ export default {
           type: 'line'
         }]
       })
+    },
+    getImage () {
+      this.image = this.chart.getDataURL({
+        type: 'png',
+        pixelRatio: 2,
+        backgroundColor: '#fff'
+      })
+      // this.image = this.$el.querySelector('canvas').toDataURL()
     }
   }
 }
